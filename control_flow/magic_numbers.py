@@ -42,9 +42,12 @@ while guess is True:  # While guess is true, the input will repeat
                 attempts += 1
                 print(attempts)
 
-        if attempts == 5:  # If attempts reaches 5, game ends
-            guess = False
-            print(f"Wow... You actually SUCK. Go away. The magic number was {magic_number}.")
+        else:
+            print("it needs to be between 1 and 50. Idiot.")
+
     else:  # Print error message if user inputs regular text or guesses outside the range
-        print("I need numbers fool. I should take an attempt for that... BUT I WON'T. "
-              "Also it needs to be between 1 and 50. Idiot.")
+        print("I need numbers fool. I should take an attempt for that... BUT I WON'T.")
+
+    if attempts == 5:  # If attempts reaches 5, game ends
+        guess = False
+        print(f"Wow... You actually SUCK. Go away. The magic number was {magic_number}.")
