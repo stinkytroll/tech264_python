@@ -43,13 +43,16 @@ while guess is True:  # While guess is true, the input will repeat
                 print("Too low idiot.")
                 attempts += 1  # Add attempt to counter
                 print(attempts)
+
             elif magic_number < int(user_guess):  # Checks if the magic number is lower than the guess
                 print("Too high idiot.")
                 attempts += 1
                 print(attempts)
 
         else:  # Print error message if user inputs a guess outside the range after confirming it is a number.
-            print("it needs to be between 1 and 50. Idiot.")
+            print("it needs to be between 1 and 50. Idiot. Now you lose a point.")
+            attempts += 1
+            print(attempts)
 
     else:  # Print error message if user inputs regular text
         print("I need numbers fool. I should take an attempt for that... BUT I WON'T.")
