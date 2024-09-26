@@ -83,9 +83,9 @@ print("TASK 7 COMPLETE.")
 for data in list_data:
     if data < 3:
         print("Less than 3")
-    if data == 3:
+    elif data == 3:
         print("I found three")
-    if data > 3:
+    else:
         print("greater than 3")
 
 print("TASK 8 COMPLETE.")

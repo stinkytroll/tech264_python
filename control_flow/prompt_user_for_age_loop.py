@@ -13,7 +13,7 @@ user_prompt = True
 
 while user_prompt is True:  # While it's true, spit out the input request
     age = input("What is your age? ")
-    if age.isdigit() and int(age) < 117:  # If user inputs digits, set to false, stopping the while loop
+    if age.isdigit() and int(age) <= 117:  # If user inputs digits, set to false, stopping the while loop
         user_prompt = False
         print(f"Your age is {age}")
     else:  # If the input does not consist of exclusively digits, print a message and continue the loop

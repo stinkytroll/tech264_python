@@ -14,11 +14,16 @@
 
 # Allow the user 5 guesses
 
+# Remember!
+# if checks the first condition.
+# elif checks more conditions if the previous ones are false.
+# else runs when no previous conditions were true, acting as a final fallback.
+
 import random
 
 guess = True
 attempts = 0
-magic_number = random.randrange(1, 50)
+magic_number = random.randrange(1, 51)
 
 
 while guess is True:  # While guess is true, the input will repeat
@@ -33,6 +38,7 @@ while guess is True:  # While guess is true, the input will repeat
                 guess = False
                 print("Ok smarty pants... You got lucky. Get out of my sight.")
 
+            # By using elif here, we avoid checking both conditions if one is found to be true.
             elif magic_number > int(user_guess):  # Checks if the magic number is greater than the guess
                 print("Too low idiot.")
                 attempts += 1  # Add attempt to counter
@@ -42,10 +48,10 @@ while guess is True:  # While guess is true, the input will repeat
                 attempts += 1
                 print(attempts)
 
-        else:
+        else:  # Print error message if user inputs a guess outside the range after confirming it is a number.
             print("it needs to be between 1 and 50. Idiot.")
 
-    else:  # Print error message if user inputs regular text or guesses outside the range
+    else:  # Print error message if user inputs regular text
         print("I need numbers fool. I should take an attempt for that... BUT I WON'T.")
 
     if attempts == 5:  # If attempts reaches 5, game ends
