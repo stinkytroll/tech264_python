@@ -1,5 +1,6 @@
 # Week 2 Learning
 
 - [Git](learning_git.md)
-- [Python Variables Tutorial](../variables/variables_examples.py)
-- [Gitbash ](learning_gitbash.md)
+- [Learning GitBash ](learning_gitbash.md)
+- [JSON Research](json_reseach.md)
+- [Statements and Loops](statements_and_loops.md)
