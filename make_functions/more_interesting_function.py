@@ -10,4 +10,4 @@ def greet(name):
     print("Hello, my name is " + name)
 
 
-greet("Hello, my name is Susan")
+greet("Susan")

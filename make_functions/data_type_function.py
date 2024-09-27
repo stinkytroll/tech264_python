@@ -4,7 +4,7 @@
 # 1. See what happens if you call your earlier greet function with this line of code:
 
 
-# greet(24601)
+greet(24601)
 
 
 # 2. To HELP us avoid this type of error, define the type of argument accepted into our function so that

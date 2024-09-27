@@ -3,8 +3,8 @@
 # Make a new improved function which
 # Accepts a string variable as an argument
 # Prints the string variable received as an argument
-def print_something(text):
-    print(text)
+def print_something(sting_to_print):
+    print(sting_to_print)
 
 
 print_something("something part 2")

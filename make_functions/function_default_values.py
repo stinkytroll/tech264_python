@@ -13,4 +13,4 @@ def addition(int1=2, int2=2):  # By declaring the number inside the variables, w
     return int1 + int2
 
 
-print(addition())  # If we were to pass a value in here, it would overwrite the default.
+print(addition(4, 4))  # If we were to pass a value in here, it would overwrite the default.
