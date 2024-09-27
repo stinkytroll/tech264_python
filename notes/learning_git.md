@@ -1,4 +1,9 @@
-# Types of Version Control
+## Git vs GitHub
+Git is a version control tool that is installed locally on your system. GitHub is a platform that offers a graphical 
+interface that can let you can work together and share code by hosting your repos on there. 
+It also had CI/CD pipeline tools such as project management software. 
+
+## Types of Version Control
 A VCS tracks changes to files over time, allowing multiple people to collaborate and revert to previous versions if necessary.
 
 ## When to Use One
