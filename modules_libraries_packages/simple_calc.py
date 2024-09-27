@@ -2,7 +2,7 @@ from math_operations import *
 
 # Mini-calculator
 user_input = input("Enter a number to access a particular operation (1 = Addition, 2 = Subtraction, "
-                   "3 = Multiplication, 4 = Division):")
+                   "3 = Multiplication, 4 = Division, 5 = Exponentiation):")
 
 # Add
 if user_input == "1":
@@ -35,3 +35,11 @@ if user_input == "4":
     second_num = int(input("Enter the first number: "))
     result = division(first_num, second_num)
     print(f"{first_num} / {second_num} = {result}")
+
+# Exponentiation
+if user_input == "5":
+    print("You selected exponentiation!")
+    first_num = int(input("Enter the base: "))
+    second_num = int(input("Enter the exponent: "))
+    result = exponentiation(first_num, second_num)
+    print(f"{first_num} ^ {second_num} = {result}")
