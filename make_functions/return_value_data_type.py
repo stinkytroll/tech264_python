@@ -16,13 +16,13 @@
 # Also check the default values work if no values are passed into the function
 
 
-def division(num1: int = 2, num2: int = 5) -> float:  # If you call this function without a and b, the default is used
+def divide(num1: int = 2, num2: int = 5) -> float:  # If you call this function without a and b, the default is used
     return num1 / num2
 
 
-print(division())
+print(divide())
 
 a: int = 4
 b: int = 6  # a and b both overwrite the set parameters above
 
-print(division(a, b))
+print(divide(a, b))
