@@ -1,6 +1,9 @@
 import random
 
-dice = random.randint(1, 6)
+
+def roll_dice():
+    return random.randint(1, 6)
+
 
 game_choice = input("Yo. Let's play dice. Wanna do a best of 10 or first to 30? "
                     "Say 1 for best of 10, say 2 for first to 30: ")
@@ -16,9 +19,9 @@ while game_choice not in ["1", "2"]:
         while computer_wins < 10 and player_wins < 10:
             roll = input('Say "Roll" to roll the dice: ')
             if roll == 'Roll':
-                player_dice = random.randint(1, 6)
+                player_dice = roll_dice()
                 print(f"You rolled a {player_dice}")
-                computer_dice = random.randint(1, 6)
+                computer_dice = roll_dice()
                 print(f"I rolled a {computer_dice}")
                 if player_dice > computer_dice:
                     player_wins += 1
@@ -49,9 +52,9 @@ while game_choice not in ["1", "2"]:
         while computer_score < 30 and player_score < 30:
             roll = input('Say "Roll" to roll the dice: ')
             if roll == 'Roll':
-                player_dice = random.randint(1, 6)
+                player_dice = roll_dice()
                 print(f"You rolled a {player_dice}")
-                computer_dice = random.randint(1, 6)
+                computer_dice = roll_dice()
                 print(f"I rolled a {computer_dice}")
                 player_score += player_dice
                 computer_score += computer_dice
