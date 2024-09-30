@@ -26,5 +26,6 @@ with open('servers.json', 'w') as json_file:
 
 # with statement creates context for the execution of code. open() is then used to open a selected file for
 # interaction. We use 'w' to enable write mode, allowing us to open the file for writing. We then convert and write
-# the dictionary to JSON format as a json_yaml file, as well as a parameter for indenting the lines 4 times for readability.
+# the dictionary to JSON format as a json_yaml file, as well as a parameter for
+# indenting the lines 4 times for readability.
 
