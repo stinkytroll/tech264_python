@@ -1,4 +1,4 @@
-# Week 2 Learning
+# Note Links
 
 - [Git](learning_git.md)
 - [Learning GitBash ](learning_gitbash.md)
