@@ -4,10 +4,10 @@ import yaml
 
 if len(sys.argv) > 1:
     # check file exists
-    if os.path.exists(sys.argv[1]):
+    if os.path.exists(sys.argv[1]):  # Check if at least one argument is provided
         # open file for reading
-        file = open(sys.argv[1], "r")
-        # parse the JSON file - if it loads then the file contains valid JSON
+        file = open(sys.argv[1], "r")  # Check if the file exists
+        # parse the YAML file - if it loads then the file contains valid YAML
         yaml.safe_load(file)
         file.close()
         print("YAML file is valid!")

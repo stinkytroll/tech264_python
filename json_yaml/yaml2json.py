@@ -9,7 +9,7 @@ if len(sys.argv) > 1:
     if os.path.exists(sys.argv[1]):  # Check to see if the script was run with at least one argument (YAML file)
         source_file = open(sys.argv[1], "r")  # Open in read mode
         source_content = yaml.safe_load(source_file)  # Safely loads the file
-        source_file.close() # Close after reading
+        source_file.close()  # Close after reading
     # Failing if the file isn't found
     else:
         print("ERROR: " + sys.argv[1] + " not found")
@@ -34,7 +34,7 @@ if len(sys.argv) > 2:  # Check whether a second argument was provided
         exit(1)
 
     # 2.3 If previous conditions not met, then save JSON file
-    with open(target_file, 'w') as yaml_file: # Writes the JSON file after if checks
+    with open(target_file, 'w') as yaml_file:  # Writes the JSON file after if checks
         yaml_file.write(convert_json)
         print(f"JSON content successfully written to '{target_file}'")
 else:
