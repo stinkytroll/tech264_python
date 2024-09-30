@@ -13,7 +13,7 @@ They're very popular due to their ease of integration and modularity. It also au
 scaling.
 
 ## Create a diagram to showcase the data transfer process in API communication.
-![img.png](img.png)
+![img.png](images/img.png)
 
 ## What is a REST API?  
 A REST API is an interface that adheres to REST (Representational State Transfer) principles, allowing interaction 
