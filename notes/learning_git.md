@@ -46,11 +46,11 @@ Changes are ready to be committed.
 Changes are saved in the repository.
 
 ## Common Workflow of Git Commands
-- git init – Initialise a new Git repository.
-- git add – Stage changes for the next commit.
-- git commit – Save changes in the repository.
-- git push – Send local commits to a remote repository.
-- git pull – Fetch and merge changes from a remote repository.
+- `git init` – Initialise a new Git repository.
+- `git add` – Stage changes for the next commit.
+- `git commit` – Save changes in the repository.
+- `git push` – Send local commits to a remote repository.
+- `git pull` – Fetch and merge changes from a remote repository.
 
 ## Danger: If Sensitive Data is Accessible in a Previous Commit
 
@@ -72,14 +72,15 @@ Sensitive data can still be accessed from previous commits, even if removed in t
 .gitignore File:
 - Use it to prevent files or folders from being committed. 
 - Useful for ignoring:
-- Sensitive data like personal files, credentials, passwords. 
-- Large files or unnecessary folders. 
-- System files or IDE settings (e.g., `.idea`, `bin`, `out`). 
-- Files already committed will still appear in history.
+  - Sensitive data like personal files, credentials, passwords. 
+  - Large files or unnecessary folders. 
+  - System files or IDE settings (e.g., `.idea`, `bin`, `out`). 
+  - Files already committed will still appear in history.
 
 ## How to Remove Committed Files from Git History
 
 1. Add files to `.gitignore` to prevent future commits.
 2. Use the command:
-   ```bash
+   ```
    git rm --cached -r .idea
+   ```
